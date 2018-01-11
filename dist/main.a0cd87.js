@@ -1,31 +1,12 @@
 webpackJsonp([0],[
-/* 0 */
+/* 0 */,
+/* 1 */,
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(0);
 __webpack_require__(1);
-__webpack_require__(2);
 __webpack_require__(3);
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-function chunk1() {
-    console.log('i will be used by more than once...');
-}
-
-exports.chunk1 = chunk1;
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-
-function chunk2() {
-    console.log('i use the chunk1 one time...');
-}
-
-exports.chunk2 = chunk2;
 
 /***/ }),
 /* 3 */
@@ -10288,4 +10269,4 @@ return jQuery;
 
 
 /***/ })
-],[0]);
+],[2]);
