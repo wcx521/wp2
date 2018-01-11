@@ -5,10 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     entry: {
-        main: './src/main.js',
-        main1: './src/main1.js',
-        jquery: ["jquery"],
-        vue: ["vue"]
+        vendor: ["./src/canvas-nest.js","./src/co.js"],
+        main: './src/main.js'
     },
     output: {
         path: path.resolve(__dirname,'dist'),
@@ -25,8 +23,8 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
-            names: ["common","jquery","vue","load"],
-            minChunks:2
+            name: 'vendor',
+            chunks: ['vendor']
         }),
         new HtmlWebpackPlugin({
             title: Date.now(),

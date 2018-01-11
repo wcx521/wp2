@@ -1,2 +1,3 @@
-require('./chunk1');
-require('./chunk2');
+require('./canvas-nest');
+
+console.log('cccc');
