@@ -1,4 +1,4 @@
-webpackJsonp([0],[
+webpackJsonp([2],[
 /* 0 */
 /***/ (function(module, exports) {
 
@@ -12,13 +12,6 @@ exports.chunk1 = chunk1;
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(0);
-__webpack_require__(2);
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
 
 __webpack_require__(0);
 
@@ -29,4 +22,4 @@ function chunk2() {
 exports.chunk2 = chunk2;
 
 /***/ })
-],[1]);
+]);

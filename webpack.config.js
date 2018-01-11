@@ -5,7 +5,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     entry: {
-        main: './src/main.js'
+        main: './src/main.js',
+        main1: './src/main1.js',
+        jquery: ["jquery"],
+        vue: ["vue"]
     },
     output: {
         path: path.resolve(__dirname,'dist'),
@@ -22,7 +25,7 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
-            name: 'chunk',
+            names: ["common","jquery","vue","load"],
             minChunks:2
         }),
         new HtmlWebpackPlugin({
