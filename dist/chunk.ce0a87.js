@@ -91,7 +91,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + chunkId + "." + {"0":"a0cd87"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + chunkId + "." + {"0":"fd2108"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -145,41 +145,6 @@
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports) {
-
-function chunk1() {
-    console.log('i will be used by more than once...');
-}
-
-exports.chunk1 = chunk1;
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-
-function chunk2() {
-    console.log('i use the chunk1 one time...');
-}
-
-exports.chunk2 = chunk2;
-
-/***/ }),
-/* 2 */,
-/* 3 */,
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(0);
-module.exports = __webpack_require__(1);
-
-
-/***/ })
-/******/ ]);
+/******/ ([]);

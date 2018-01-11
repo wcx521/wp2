@@ -5,8 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     entry: {
-        main: './src/main.js',
-        'chunk': ['./src/chunk1.js','./src/chunk2.js']
+        main: './src/main.js'
     },
     output: {
         path: path.resolve(__dirname,'dist'),
@@ -23,7 +22,8 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
-            name: 'chunk'
+            name: 'chunk',
+            minChunks:2
         }),
         new HtmlWebpackPlugin({
             title: Date.now(),
