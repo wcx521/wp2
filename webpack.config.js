@@ -21,6 +21,9 @@ module.exports = {
         }]
     },
     plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'chunk'
+        }),
         new HtmlWebpackPlugin({
             title: Date.now(),
             filename: 'ttt.html',
