@@ -26,6 +26,7 @@ module.exports = {
             name: 'vendor',
             chunks: ['vendor']
         }),
+        new webpack.optimize.UglifyJsPlugin(),
         new HtmlWebpackPlugin({
             title: Date.now(),
             filename: 'ttt.html',
